@@ -43,3 +43,9 @@ function formatTimeLeft(time) {
   return `${minutes}:${seconds}`;
 }
 
+const TIME_LIMIT = 20;
+
+// Initially, no time has passed, but this will count up
+// and subtract from the TIME_LIMIT
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
